@@ -12,7 +12,7 @@ public class ManufactureFilteringStrategy implements FilteringStrategy {
     @Override
     public boolean filter(Product product) {
         String productManufacture = product.getManufacture().toLowerCase();
-        if (productManufacture.equals(manufacture)) return true;
+        if (productManufacture.equals(manufacture.toLowerCase())) return true;
         return false;
     }
 }
